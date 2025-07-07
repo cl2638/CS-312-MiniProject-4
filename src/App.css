@@ -1,0 +1,100 @@
+/* import poppins font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+/* body basics: no margin, font set, bg gradient, dark text */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  color: #222;
+}
+
+/* main app container */
+.App {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 600px;
+  margin: auto;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+/*page title*/
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #ff6f00;
+}
+
+/* form spacing below */
+form {
+  margin-bottom: 2rem;
+}
+
+/* inputs: padding, font size, width limit, border and rounding, margin, smooth border transition */
+input {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  width: 80%;
+  max-width: 280px;
+  border: 2px solid #bbb;
+  border-radius: 10px;
+  margin: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* input focus state: orange border */
+input:focus {
+  border-color: #ff6f00;
+}
+
+/*button stuff*/
+button {
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* button hover: darker orange */
+button:hover {
+  background-color: #e65100;
+}
+
+
+/* result container */
+.result {
+  background: #fff3e0;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* result text */
+.result p {
+  font-size: 1.2rem;
+  margin: 0.6rem 0;
+  line-height: 1.5;
+}
+
+/* result strong text */
+.result strong {
+  color: #ff6f00;
+  font-weight: 600;
+}
+
+/* fadeIn animation: from transparent and slightly down to visible and normal position */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

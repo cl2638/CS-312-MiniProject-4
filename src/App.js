@@ -56,10 +56,10 @@ function App() {
 
       {result && (
         <div className="result">
-          <p><strong>📍 Location:</strong> {result.lat}, {result.lng}</p>
-          <p><strong>🔆 Max UV Index Today:</strong> {result.uv}</p>
-          <p><strong>⏱️ Current Time:</strong> {result.currentLocalTime}</p>
-          <p><strong>🧴 Message:</strong> {result.message}</p>
+          <p><strong> Location:</strong> {result.lat}, {result.lng}</p>
+          <p><strong> Max UV Index Today:</strong> {result.uv}</p>
+          <p><strong> Current Time:</strong> {result.currentLocalTime}</p>
+          <p><strong> Message:</strong> {result.message}</p>
           <p className="note">Note: UV index shown is the <em>maximum expected</em> for the day.</p>
         </div>
       )}
